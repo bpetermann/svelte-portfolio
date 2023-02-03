@@ -41,19 +41,6 @@
 </header>
 
 <main class="container">
-  <div>
-    <a href="https://vitejs.dev" target="_blank" rel="noreferrer">
-      <img src="/vite.svg" class="logo" alt="Vite Logo" />
-    </a>
-    <a href="https://svelte.dev" target="_blank" rel="noreferrer">
-      <img src="svelte.svg" class="logo svelte" alt="Svelte Logo" />
-    </a>
-    <a href="https://github.com/picocss/pico" target="_blank" rel="noreferrer">
-      <img src="/pico.svg" class="logo pico" alt="Pico Logo" />
-    </a>
-  </div>
-  <h1>Vite + Svelte + i18n + Pico</h1>
-
   <p>
     Check out <a
       href="https://github.com/sveltejs/kit#readme"
@@ -63,7 +50,45 @@
   </p>
 
   <p class="read-the-docs">Click on the Vite and Svelte logos to learn more</p>
+
+  <div class="grid">
+    <div>
+      <article>
+        <header>Projekt 1</header>
+        Body
+        <footer>Footer</footer>
+      </article>
+    </div>
+    <div>
+      <article>
+        <header>Projekt 2</header>
+        Body
+        <footer>Footer</footer>
+      </article>
+    </div>
+    <div>
+      <article>
+        <header>Projekt 3</header>
+        Body
+        <footer>Footer</footer>
+      </article>
+    </div>
+  </div>
 </main>
+
+<footer class="container-fluid">
+  <small
+    >Built with <a href="https://vitejs.dev" target="_blank" rel="noreferrer">
+      <img src="/vite.svg" class="logo" alt="Vite Logo" />
+    </a>
+    <a href="https://svelte.dev" target="_blank" rel="noreferrer">
+      <img src="svelte.svg" class="logo svelte" alt="Svelte Logo" />
+    </a>
+    <a href="https://github.com/picocss/pico" target="_blank" rel="noreferrer">
+      <img src="/pico.svg" class="logo pico" alt="Pico Logo" />
+    </a>
+  </small>
+</footer>
 
 <style>
   header {
@@ -79,24 +104,22 @@
     margin-top: 100px;
   }
   .logo {
-    height: 6em;
-    padding: 1.5em;
+    height: 16px;
+    padding-left: 12px;
     will-change: filter;
     transition: filter 300ms;
   }
   .logo:hover {
-    filter: drop-shadow(0 0 2em #646cffaa);
+    filter: drop-shadow(0 0 8px #646cffaa);
   }
   .logo.svelte:hover {
-    filter: drop-shadow(0 0 2em #ff3e00aa);
+    filter: drop-shadow(0 0 8px #ff3e00aa);
   }
   .read-the-docs {
     color: #888;
   }
 
-  @media (max-width: 768px) {
-    .logo {
-      height: 5em;
-    }
+  footer {
+    padding-bottom: 8px;
   }
 </style>
