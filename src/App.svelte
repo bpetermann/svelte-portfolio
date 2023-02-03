@@ -4,9 +4,43 @@
   import theme from './stores/theme-store';
 
   $: document.documentElement.setAttribute('data-theme', $theme);
+
+  let languages: { id: number; text: string }[] = [
+    { id: 1, text: 'en' },
+    { id: 2, text: 'de' },
+  ];
+  let selected: string;
+  const changeLanguage: () => void = () => {
+    $i18n.changeLanguage(selected);
+  };
 </script>
 
-<main>
+<header class="container">
+  <nav>
+    <ul>
+      <select bind:value={selected} on:change={changeLanguage}>
+        {#each languages as { id, text } (id)}
+          <option value={text} selected={$i18n.resolvedLanguage === text}>
+            {$i18n.t(`${text}`)}
+          </option>
+        {/each}
+      </select>
+    </ul>
+    <ul>
+      <label for="switch">
+        <input
+          type="checkbox"
+          id="switch"
+          name="switch"
+          role="switch"
+          on:change={() => theme.set($theme === 'light' ? 'dark' : 'light')}
+        />
+      </label>
+    </ul>
+  </nav>
+</header>
+
+<main class="container">
   <div>
     <a href="https://vitejs.dev" target="_blank" rel="noreferrer">
       <img src="/vite.svg" class="logo" alt="Vite Logo" />
@@ -20,21 +54,6 @@
   </div>
   <h1>Vite + Svelte + i18n + Pico</h1>
 
-  <div class="card">
-    <button
-      on:click={() =>
-        $i18n.changeLanguage($i18n.language === 'en' ? 'de' : 'en')}
-      class="outline"
-    >
-      {$i18n.t('Hello World')}
-    </button>
-    <button
-      on:click={() => theme.set($theme === 'light' ? 'dark' : 'light')}
-      class="outline"
-      >Theme
-    </button>
-  </div>
-
   <p>
     Check out <a
       href="https://github.com/sveltejs/kit#readme"
@@ -47,6 +66,18 @@
 </main>
 
 <style>
+  header {
+    padding-top: 16px;
+  }
+
+  select {
+    margin: 0;
+    padding-top: 8px;
+    padding-bottom: 8px;
+  }
+  main {
+    margin-top: 100px;
+  }
   .logo {
     height: 6em;
     padding: 1.5em;
@@ -61,5 +92,11 @@
   }
   .read-the-docs {
     color: #888;
+  }
+
+  @media (max-width: 768px) {
+    .logo {
+      height: 5em;
+    }
   }
 </style>
