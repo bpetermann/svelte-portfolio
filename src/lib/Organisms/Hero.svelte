@@ -68,11 +68,17 @@
   }
 
   a > img {
-    width: 32px;
+    width: 38px;
   }
 
   .dark {
     filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(33deg)
       brightness(102%) contrast(104%);
+  }
+
+  @media (max-width: 768px) {
+    a > img {
+    width: 24px;
+  }
   }
 </style>
