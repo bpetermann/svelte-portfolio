@@ -39,4 +39,9 @@
     pointer-events: none;
     margin-bottom: 8px;
   }
+
+  span {
+    color: #df788f;
+    border-color: #df788f;
+  }
 </style>

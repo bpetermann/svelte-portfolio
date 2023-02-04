@@ -5,11 +5,13 @@
   import Footer from '../Organisms/Footer.svelte';
   import Hero from '../Organisms/Hero.svelte';
   import '@picocss/pico';
+  import About from '../Organisms/About.svelte';
 </script>
 
 <Header />
 <main class="container">
   <Hero />
+  <About />
   <Projects />
   <Experience />
 </main>
@@ -17,7 +19,6 @@
 
 <style>
   main {
-    margin-top: 100px;
     text-align: center;
   }
 </style>
