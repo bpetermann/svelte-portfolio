@@ -2,11 +2,13 @@
   import Projects from '../Organisms/Projects.svelte';
   import Header from '../Organisms/Header.svelte';
   import Footer from '../Organisms/Footer.svelte';
+  import Hero from '../Organisms/Hero.svelte';
   import '@picocss/pico';
 </script>
 
 <Header />
 <main class="container">
+  <Hero />
   <Projects />
 </main>
 <Footer />

@@ -9,7 +9,6 @@
 <footer class="container-fluid">
   <small
     >Built with
-
     {#each builtLinks as { id, name, href } (id)}
       <a {href} target="_blank" rel="noreferrer">
         <img src="/{name}.svg" class="logo {name}" alt="{name} Logo" />
