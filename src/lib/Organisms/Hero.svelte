@@ -45,8 +45,8 @@
   <nav>
     <ul>
       <li><a href="/"> About </a></li>
-      <li><a href="/">Projects</a></li>
-      <li><a href="/">Experience</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#experience">Experience</a></li>
     </ul>
   </nav>
 </article>
@@ -72,7 +72,6 @@
   }
 
   .dark {
-    width: 32px;
     filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(33deg)
       brightness(102%) contrast(104%);
   }

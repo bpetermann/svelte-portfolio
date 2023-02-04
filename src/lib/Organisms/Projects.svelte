@@ -8,8 +8,10 @@
   ];
 </script>
 
-<div class="grid">
-  {#each projects as { id, name } (id)}
-    <Project {name} />
-  {/each}
-</div>
+<section id="projects">
+  <div class="grid">
+    {#each projects as { id, name } (id)}
+      <Project {name} />
+    {/each}
+  </div>
+</section>
