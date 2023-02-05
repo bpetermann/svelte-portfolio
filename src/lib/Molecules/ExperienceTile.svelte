@@ -1,4 +1,6 @@
 <script lang="ts">
+  import i18n from '../../stores/i18n-store';
+
   export let cat: string;
   export let name: string;
   export let inst: string;
@@ -17,7 +19,7 @@
     </hgroup>
   </header>
   <p>{time}</p>
-  <p>{description}</p>
+  <p>{$i18n.t(`${description}`)}</p>
 </article>
 
 <style>

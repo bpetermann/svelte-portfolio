@@ -1,5 +1,6 @@
 <script lang="ts">
   import theme from '../../stores/theme-store';
+  import i18n from '../../stores/i18n-store';
 </script>
 
 <article>
@@ -42,9 +43,9 @@
   </nav>
   <nav>
     <ul>
-      <li><a href="#about"> About </a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#experience">Experience</a></li>
+      <li><a href="#about">{$i18n.t('About')}</a></li>
+      <li><a href="#projects">{$i18n.t('Projects')}</a></li>
+      <li><a href="#experience">{$i18n.t('Experience')}</a></li>
     </ul>
   </nav>
 </article>

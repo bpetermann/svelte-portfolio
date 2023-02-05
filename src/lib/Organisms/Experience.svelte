@@ -19,7 +19,7 @@
       inst: 'Web Development Masterclass',
       time: '2022',
       description:
-        ' Included Quality Assurance, Infrastructure Architecture, Version Control, Client-Server Architecture MVC Concept SPA, MPA, CSR, SSR',
+        'Included Quality Assurance, Infrastructure Architecture, Version Control, Client-Server Architecture MVC Concept SPA, MPA, CSR, SSR',
     },
   ];
 </script>
