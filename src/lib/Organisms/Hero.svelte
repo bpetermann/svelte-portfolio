@@ -1,7 +1,5 @@
 <script lang="ts">
   import theme from '../../stores/theme-store';
-
-  $: console.log($theme);
 </script>
 
 <article>
@@ -78,7 +76,7 @@
 
   @media (max-width: 768px) {
     a > img {
-    width: 24px;
-  }
+      width: 24px;
+    }
   }
 </style>
