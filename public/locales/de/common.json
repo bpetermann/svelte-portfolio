@@ -7,8 +7,12 @@
   "Hi, I am Ben": "Hallo, ich bin Ben",
   "I started my web development journey in 2021 and currently work as a Junior Frontend Developer. I am very enthusiastic about building stuff, frontend frameworks, staying up to date with new technologies, and solving problems.": "Ich begann meine Reise in die Webentwicklung im Jahr 2021 und arbeite derzeit als Junior Frontend Developer. Ich bin sehr enthusiastisch, wenn es darum geht Dinge zu entwickeln, Frontend-Frameworks, mit neuen Technologien auf dem Laufenden zu bleiben und Probleme zu lösen.",
   "One of my first major study projects was a simple webshop, which was implemented with React. Since then I have implemented this project in different variations with various frameworks.": "Eines meiner ersten größeren Studienprojekte war ein einfacher Webshop, welcher in React implementiert wurde. Seitdem habe ich dieses Projekt in verschiedenen Variationen mit unterschiedlichen Frameworks umgesetzt.",
-  "These and other projects can all be found on Github": "Diese und andere Projekte sind alle auf Github zu finden",
+  "These and other projects can all be found on Github": "Diese und andere Projekte sind auf Github zu finden",
   "View on Github": "Ansicht auf Github",
-  "I am currently studying Web Development at the FH Technikum Wien. Topics are among others databases, frontend frameworks, backend development as well as software architecture and testing.": "Ich studiere derzeit Web Development an der FH Technikum Wien. Themen sind unter anderem Datenbanken, Frontend-Frameworks, Backend-Entwicklung sowie Software-Architektur und Testen.",
-  "Included Quality Assurance, Infrastructure Architecture, Version Control, Client-Server Architecture MVC Concept SPA, MPA, CSR, SSR": "Inklusive Quality Assurance, Infrastructure Architecture, Version Control, Client-Server Architecture MVC Concept SPA, MPA, CSR, SSR"
+  "From 2021 | To 2023": "Von 2021 | bis 2023",
+  "Education": "Ausbildung",
+  "Training": "Weiterbildung",
+  "University of Applied Sciences Technikum Wien": "FH Technikum Wien",
+  "I am currently studying Web Development at the University of Applied Sciences Technikum Wien Technikum Wien. Topics are among others databases, frontend frameworks, backend development as well as software architecture and testing.": "Derzeit studiere ich Web Development an der FH Technikum Wien. Themen sind, unter anderem, Datenbanken, Frontend-Frameworks, Backend-Entwicklung sowie Software-Architektur und Testen.",
+  "Topics included Quality Assurance, Infrastructure Architecture, Version Control, Client-Server Architecture, CRUD & State, MVC Concept SPA, MPA, CSR, SSR, Backend and Frontend Architecture": "Themen inkludierten Qualitätssicherung, Infrastrukturarchitektur, Versionskontrolle, Client-Server-Architektur, CRUD & State, MVC-Konzept SPA, MPA, CSR, SSR, Backend- und Frontend-Architektur"
 }

@@ -11,14 +11,14 @@
 <article>
   <header>
     <div>
-      <span role="button" class="contrast outline">{cat}</span>
+      <span role="button" class="contrast outline">{$i18n.t(`${cat}`)}</span>
     </div>
     <hgroup>
       <h2>{name}</h2>
       <h3>{inst}</h3>
     </hgroup>
   </header>
-  <p>{time}</p>
+  <p>{$i18n.t(`${time}`)}</p>
   <p>{$i18n.t(`${description}`)}</p>
 </article>
 
@@ -34,4 +34,9 @@
     color: #df788f;
     border-color: #df788f;
   }
+
+  article > p:first-of-type {
+    color: #707f89;
+  }
+
 </style>

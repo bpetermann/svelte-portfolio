@@ -1,51 +1,69 @@
 <script lang="ts">
   import theme from '../../stores/theme-store';
   import i18n from '../../stores/i18n-store';
+  import { quintIn } from 'svelte/easing';
+  import { tweened } from 'svelte/motion';
+  import { onMount } from 'svelte';
+
+  let socialMedia: { name: string; href: string }[] = [
+    {
+      name: 'github',
+      href: 'https://github.com/bpetermann/',
+    },
+    {
+      name: 'linkedin',
+      href: 'https://linkedin.com/in/ben-peterman',
+    },
+    {
+      name: 'twitter',
+      href: 'https://twitter.com/',
+    },
+  ];
+
+  let progress = tweened(0, {
+    duration: 2000,
+    easing: quintIn,
+  });
+
+  onMount(() => {
+    progress.set(1);
+  });
 </script>
 
 <article>
-  <img src="/images/me.png" alt="Placeholder" />
+  <img src="/images/me.png" alt="Me" style="opacity: {$progress}" />
   <hgroup>
     <h2>Benjamin Petermann</h2>
     <h3>Junior Frontend Developer</h3>
   </hgroup>
   <nav>
     <ul>
-      <li>
-        <a href="/">
-          <img
-            src={$theme === 'dark'
-              ? '/images/github-light.png'
-              : '/images/github.png'}
-            alt="Placeholder"
-          />
-        </a>
-      </li>
-      <li>
-        <a href="/">
-          <img
-            src="/images/linkedin.png"
-            class:dark={$theme === 'dark'}
-            alt="Placeholder"
-          />
-        </a>
-      </li>
-      <li>
-        <a href="/">
-          <img
-            src="/images/twitter.png"
-            class:dark={$theme === 'dark'}
-            alt="Placeholder"
-          />
-        </a>
-      </li>
+      {#each socialMedia as { name, href } (href)}
+        <li>
+          <a {href}>
+            <img
+              src={`/images/${name}.png`}
+              class:dark={name === 'github'
+                ? $theme !== 'dark'
+                : $theme === 'dark'}
+              alt="{name} Logo"
+            />
+          </a>
+        </li>
+      {/each}
     </ul>
   </nav>
   <nav>
     <ul>
-      <li><a href="#about">{$i18n.t('About')}</a></li>
-      <li><a href="#projects">{$i18n.t('Projects')}</a></li>
-      <li><a href="#experience">{$i18n.t('Experience')}</a></li>
+      <li>
+        <a href="#about">{$i18n.t('About')}</a>
+      </li>
+      <li>
+        <a href="#projects">{$i18n.t('Projects')}</a>
+      </li>
+      <li>
+        <a href="#experience">{$i18n.t('Experience')}</a>
+      </li>
     </ul>
   </nav>
 </article>
