@@ -31,12 +31,11 @@
   }
 
   span {
-    color: #df788f;
-    border-color: #df788f;
+    color: #8a61d3;
+    border-color: #8a61d3;
   }
 
   article > p:first-of-type {
     color: #707f89;
   }
-
 </style>

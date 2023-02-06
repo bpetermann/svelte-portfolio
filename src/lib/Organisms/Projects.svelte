@@ -37,3 +37,9 @@
     {/each}
   </div>
 </section>
+
+<style>
+  section > p {
+    padding-top: 16px;
+  }
+</style>

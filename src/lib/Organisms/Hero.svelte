@@ -21,7 +21,7 @@
   ];
 
   let progress = tweened(0, {
-    duration: 2000,
+    duration: 1000,
     easing: quintIn,
   });
 
@@ -86,6 +86,8 @@
 
   a > img {
     width: 38px;
+    margin: 4px;
+    margin-top: 0px;
   }
 
   .dark {

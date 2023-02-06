@@ -1,7 +1,7 @@
 <script lang="ts">
   let builtLinks: { id: number; name: string; href: string }[] = [
     { id: 1, name: 'vite', href: 'https://vitejs.dev' },
-    { id: 2, name: 'svelte', href: 'https://vitejs.dev' },
+    { id: 2, name: 'svelte', href: 'https://svelte.dev/' },
     { id: 3, name: 'pico', href: 'https://github.com/picocss/pico' },
   ];
 </script>
