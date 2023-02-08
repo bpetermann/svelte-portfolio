@@ -30,7 +30,7 @@
       'One of my first major study projects was a simple webshop, which was implemented with React. Since then I have implemented this project in different variations with various frameworks.'
     )}
   </p>
-  <p>{$i18n.t('These and other projects can all be found on Github')}</p>
+  <p>{$i18n.t('These and other projects can all be found on Github.')}</p>
   <div class="grid">
     {#each projects as { id, name, image, link } (id)}
       <Project {name} {image} {link} />

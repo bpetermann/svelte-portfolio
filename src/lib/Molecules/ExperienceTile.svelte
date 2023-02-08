@@ -15,7 +15,7 @@
     </div>
     <hgroup>
       <h2>{name}</h2>
-      <h3>{inst}</h3>
+      <h3>{$i18n.t(`${inst}`)}</h3>
     </hgroup>
   </header>
   <p>{$i18n.t(`${time}`)}</p>
