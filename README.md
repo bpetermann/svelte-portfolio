@@ -1,8 +1,9 @@
 ## Svelte Shopping Cart
 
 - Just toying around with svelte, ts, and pico by building a simple portfolio site
-- If desired, entered data can be easily adapted
-- Bilingualism in german english with svelte i18n. Languages can be extended
+- If desired, entered data can easily be adapted
+- Bilingualism in german/english via svelte i18n. Languages can be extended
+- All necessary dependencies/setup are in the initial commit
 
 ### Tools
 
