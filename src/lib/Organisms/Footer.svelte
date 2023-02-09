@@ -1,4 +1,6 @@
 <script lang="ts">
+  import TopButton from '../Atoms/TopButton.svelte';
+
   let builtLinks: { id: number; name: string; href: string }[] = [
     { id: 1, name: 'vite', href: 'https://vitejs.dev' },
     { id: 2, name: 'svelte', href: 'https://svelte.dev/' },
@@ -15,11 +17,14 @@
       </a>
     {/each}
   </small>
+  <TopButton />
 </footer>
 
 <style>
   footer {
-    padding-bottom: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
   }
 
   .logo {

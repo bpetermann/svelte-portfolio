@@ -26,5 +26,6 @@
     margin: 0;
     padding-top: 8px;
     padding-bottom: 8px;
+    cursor: pointer;
   }
 </style>

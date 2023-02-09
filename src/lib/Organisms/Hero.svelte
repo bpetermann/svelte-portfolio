@@ -30,43 +30,45 @@
   });
 </script>
 
-<article>
-  <img src="/images/me.png" alt="Me" style="opacity: {$progress}" />
-  <hgroup>
-    <h2>Benjamin Petermann</h2>
-    <h3>Junior Frontend Developer</h3>
-  </hgroup>
-  <nav>
-    <ul>
-      {#each socialMedia as { name, href } (href)}
+<section>
+  <article>
+    <img src="/images/me.png" alt="Me" style="opacity: {$progress}" />
+    <hgroup>
+      <h2>Benjamin Petermann</h2>
+      <h3>Junior Frontend Developer</h3>
+    </hgroup>
+    <nav>
+      <ul>
+        {#each socialMedia as { name, href } (href)}
+          <li>
+            <a {href}>
+              <img
+                src={`/images/${name}.png`}
+                class:dark={name === 'github'
+                  ? $theme !== 'dark'
+                  : $theme === 'dark'}
+                alt="{name} Logo"
+              />
+            </a>
+          </li>
+        {/each}
+      </ul>
+    </nav>
+    <nav>
+      <ul>
         <li>
-          <a {href}>
-            <img
-              src={`/images/${name}.png`}
-              class:dark={name === 'github'
-                ? $theme !== 'dark'
-                : $theme === 'dark'}
-              alt="{name} Logo"
-            />
-          </a>
+          <a href="#about">{$i18n.t('About')}</a>
         </li>
-      {/each}
-    </ul>
-  </nav>
-  <nav>
-    <ul>
-      <li>
-        <a href="#about">{$i18n.t('About')}</a>
-      </li>
-      <li>
-        <a href="#projects">{$i18n.t('Projects')}</a>
-      </li>
-      <li>
-        <a href="#experience">{$i18n.t('Experience')}</a>
-      </li>
-    </ul>
-  </nav>
-</article>
+        <li>
+          <a href="#projects">{$i18n.t('Projects')}</a>
+        </li>
+        <li>
+          <a href="#experience">{$i18n.t('Experience')}</a>
+        </li>
+      </ul>
+    </nav>
+  </article>
+</section>
 
 <style>
   hgroup {
@@ -87,7 +89,7 @@
   a > img {
     width: 38px;
     margin: 4px;
-    margin-top: 0px;
+    margin-top: -4px;
   }
 
   .dark {
