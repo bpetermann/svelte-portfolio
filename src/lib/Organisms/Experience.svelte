@@ -7,6 +7,7 @@
       id: 1,
       cat: 'Education',
       name: 'Academic Web Developer',
+      link: 'https://www.technikum-wien.at/',
       inst: 'University of Applied Sciences Technikum Wien',
       time: 'From 2021 | To 2023',
       description:
@@ -16,6 +17,7 @@
       id: 2,
       cat: 'Training',
       name: 'Web Development Masterclass',
+      link: 'https://www.cnc.io/de/',
       inst: 'Carrot & Company',
       time: '2022',
       description:
@@ -25,7 +27,7 @@
 </script>
 
 <section id="experience">
-  {#each experience as { id, cat, name, inst, time, description } (id)}
-    <ExperienceTile {cat} {name} {inst} {time} {description} />
+  {#each experience as { id, cat, name, link, inst, time, description } (id)}
+    <ExperienceTile {cat} {name} {link} {inst} {time} {description} />
   {/each}
 </section>

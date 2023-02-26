@@ -13,8 +13,10 @@
       <img src="/images/{image}.png" alt="Placeholder" />
     </figure>
     <footer>
-      <a href="https://github.com/bpetermann/{link}"
-        >{$i18n.t('View on Github')}</a
+      <a
+        href="https://github.com/bpetermann/{link}"
+        target="_blank"
+        rel="noopener noreferrer">{$i18n.t('View on Github')}</a
       >
     </footer>
   </article>

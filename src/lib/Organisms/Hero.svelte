@@ -41,7 +41,7 @@
       <ul>
         {#each socialMedia as { name, href } (href)}
           <li>
-            <a {href}>
+            <a {href} target="_blank" rel="noopener noreferrer">
               <img
                 src={`/images/${name}.png`}
                 class:dark={name === 'github'

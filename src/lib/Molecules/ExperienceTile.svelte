@@ -3,6 +3,7 @@
 
   export let cat: string;
   export let name: string;
+  export let link: string;
   export let inst: string;
   export let time: string;
   export let description: string;
@@ -15,7 +16,11 @@
     </div>
     <hgroup>
       <h2>{name}</h2>
-      <h3>{$i18n.t(`${inst}`)}</h3>
+      <h3>
+        <a href={link} target="_blank" rel="noopener noreferrer"
+          >{$i18n.t(`${inst}`)}</a
+        >
+      </h3>
     </hgroup>
   </header>
   <p>{$i18n.t(`${time}`)}</p>
