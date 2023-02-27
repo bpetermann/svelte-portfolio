@@ -16,7 +16,7 @@
 
 ```
 git clone https://github.com/bpetermann/svelte-portfolio.git
-cd cv-application
+cd svelte-portfolio
 npm install
 npm run dev
 ```
