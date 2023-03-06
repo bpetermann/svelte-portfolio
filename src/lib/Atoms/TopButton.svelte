@@ -1,6 +1,7 @@
 <script>
   function goTop() {
     document.body.scrollIntoView();
+    document.location.hash = '';
   }
 </script>
 
