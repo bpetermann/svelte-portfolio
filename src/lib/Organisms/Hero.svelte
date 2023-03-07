@@ -14,10 +14,6 @@
       name: 'linkedin',
       href: 'https://linkedin.com/in/ben-peterman',
     },
-    {
-      name: 'twitter',
-      href: 'https://twitter.com/',
-    },
   ];
 
   let progress = tweened(0, {
