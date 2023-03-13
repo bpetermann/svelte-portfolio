@@ -1,6 +1,7 @@
 <script lang="ts">
   import ExperienceTile from '@/lib/Molecules/ExperienceTile.svelte';
   import type { ExperienceType } from '@/types/experience.type';
+  import i18n from '@/stores/i18n-store';
 
   let experience: ExperienceType[] = [
     {
@@ -27,6 +28,7 @@
 </script>
 
 <section id="experience">
+  <h2>{$i18n.t('Experience')}</h2>
   {#each experience as { id, cat, name, link, inst, time, description } (id)}
     <ExperienceTile {cat} {name} {link} {inst} {time} {description} />
   {/each}

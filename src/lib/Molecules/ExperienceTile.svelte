@@ -15,12 +15,12 @@
       <span role="button" class="contrast outline">{$i18n.t(`${cat}`)}</span>
     </div>
     <hgroup>
-      <h2>{name}</h2>
-      <h3>
+      <h3>{name}</h3>
+      <h4>
         <a href={link} target="_blank" rel="noopener noreferrer"
           >{$i18n.t(`${inst}`)}</a
         >
-      </h3>
+      </h4>
     </hgroup>
   </header>
   <p>{$i18n.t(`${time}`)}</p>
