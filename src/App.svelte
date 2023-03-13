@@ -1,7 +1,7 @@
 <script lang="ts">
-  import Template from '../src/lib/Template/Index.svelte';
-  import Header from './lib/Organisms/Header.svelte';
-  import Footer from './lib/Organisms/Footer.svelte';
+  import Template from '@/lib/Template/Index.svelte';
+  import Header from '@/lib/Organisms/Header.svelte';
+  import Footer from '@/lib/Organisms/Footer.svelte';
 </script>
 
 <Header />

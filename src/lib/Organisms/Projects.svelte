@@ -1,6 +1,6 @@
 <script lang="ts">
-  import Project from '../Molecules/Project.svelte';
-  import i18n from '../../stores/i18n-store';
+  import Project from '@/lib/Molecules/Project.svelte';
+  import i18n from '@/stores/i18n-store';
 
   let projects: { id: number; name: string; image: string; link: string }[] = [
     {

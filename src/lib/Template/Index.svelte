@@ -1,8 +1,8 @@
 <script lang="ts">
-  import Experience from '../Organisms/Experience.svelte';
-  import Projects from '../Organisms/Projects.svelte';
-  import About from '../Organisms/About.svelte';
-  import Hero from '../Organisms/Hero.svelte';
+  import Experience from '@/lib/Organisms/Experience.svelte';
+  import Projects from '@/lib/Organisms/Projects.svelte';
+  import About from '@/lib/Organisms/About.svelte';
+  import Hero from '@/lib/Organisms/Hero.svelte';
   import '@picocss/pico';
 </script>
 

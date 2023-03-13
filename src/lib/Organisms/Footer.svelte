@@ -1,5 +1,5 @@
 <script lang="ts">
-  import TopButton from '../Atoms/TopButton.svelte';
+  import TopButton from '@/lib/Atoms/TopButton.svelte';
 
   let builtLinks: { id: number; name: string; href: string }[] = [
     { id: 1, name: 'vite', href: 'https://vitejs.dev' },

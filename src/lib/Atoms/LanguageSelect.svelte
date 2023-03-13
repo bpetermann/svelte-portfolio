@@ -1,5 +1,5 @@
 <script lang="ts">
-  import i18n from '../../stores/i18n-store';
+  import i18n from '@/stores/i18n-store';
 
   let languages: { id: number; text: string }[] = [
     { id: 1, text: 'en' },

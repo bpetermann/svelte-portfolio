@@ -1,5 +1,5 @@
 <script lang="ts">
-  import i18n from '../../stores/i18n-store';
+  import i18n from '@/stores/i18n-store';
 
   export let cat: string;
   export let name: string;

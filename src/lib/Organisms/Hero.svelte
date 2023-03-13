@@ -1,6 +1,6 @@
 <script lang="ts">
-  import theme from '../../stores/theme-store';
-  import i18n from '../../stores/i18n-store';
+  import theme from '@/stores/theme-store';
+  import i18n from '@/stores/i18n-store';
   import { quintIn } from 'svelte/easing';
   import { tweened } from 'svelte/motion';
   import { onMount } from 'svelte';
@@ -28,7 +28,7 @@
 
 <section>
   <article>
-    <img src="/images/me.png" alt="Me" style="opacity: {$progress}" />
+    <img src="/images/me.webp" alt="Me" style="opacity: {$progress}" />
     <hgroup>
       <h2>Benjamin Petermann</h2>
       <h3>Junior Frontend Developer</h3>

@@ -1,5 +1,5 @@
 <script lang="ts">
-  import i18n from '../../stores/i18n-store';
+  import i18n from '@/stores/i18n-store';
 </script>
 
 <section id="about">

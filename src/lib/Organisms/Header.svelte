@@ -1,21 +1,26 @@
 <script lang="ts">
-  import LanguageSelect from '../Atoms/LanguageSelect.svelte';
-  import ThemeSwitch from '../Atoms/ThemeSwitch.svelte';
+  import LanguageSelect from '@/lib/Atoms/LanguageSelect.svelte';
+  import ThemeSwitch from '@/lib/Atoms/ThemeSwitch.svelte';
 </script>
 
 <header class="container">
   <nav>
-    <ul>
+    <div>
       <LanguageSelect />
-    </ul>
-    <ul>
+    </div>
+    <div>
       <ThemeSwitch />
-    </ul>
+    </div>
   </nav>
 </header>
 
 <style>
   header {
     padding-top: 16px;
+  }
+
+  div {
+    display: flex;
+    align-items: center;
   }
 </style>

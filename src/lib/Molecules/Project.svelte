@@ -1,5 +1,5 @@
 <script lang="ts">
-  import i18n from '../../stores/i18n-store';
+  import i18n from '@/stores/i18n-store';
 
   export let name: string;
   export let image: string;
@@ -10,7 +10,7 @@
   <article>
     <header>{name}</header>
     <figure>
-      <img src="/images/{image}.png" alt="Placeholder" />
+      <img src="/images/{image}.webp" alt="Placeholder" />
     </figure>
     <footer>
       <a

@@ -1,6 +1,6 @@
 <script lang="ts">
-  import ExperienceTile from '../Molecules/ExperienceTile.svelte';
-  import type { ExperienceType } from '../../types/experience.type';
+  import ExperienceTile from '@/lib/Molecules/ExperienceTile.svelte';
+  import type { ExperienceType } from '@/types/experience.type';
 
   let experience: ExperienceType[] = [
     {
