@@ -26,7 +26,6 @@
 
 <section id="projects">
   <h2>{$i18n.t('Projects')}</h2>
-
   <p>
     {$i18n.t(
       'One of my first major study projects was a simple webshop, which was implemented with React. Since then I have implemented this project in different variations with various frameworks.'

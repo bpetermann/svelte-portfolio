@@ -84,7 +84,7 @@
 
   a > img {
     width: 38px;
-    height: 24px;
+    height: 38px;
     margin: 4px;
     margin-top: -4px;
   }
@@ -97,6 +97,7 @@
   @media (max-width: 768px) {
     a > img {
       width: 24px;
+      height: 24px;
     }
   }
 </style>
