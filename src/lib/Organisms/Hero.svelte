@@ -84,6 +84,7 @@
 
   a > img {
     width: 38px;
+    height: 24px;
     margin: 4px;
     margin-top: -4px;
   }
