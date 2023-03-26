@@ -27,9 +27,15 @@
     justify-content: space-between;
   }
 
+  small {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+  }
+
   .logo {
-    height: 16px;
-    padding-left: 12px;
+    all: unset;
+    height: 14px;
     will-change: filter;
     transition: filter 300ms;
   }
@@ -40,9 +46,5 @@
 
   .logo.svelte:hover {
     filter: drop-shadow(0 0 8px #ff3e00aa);
-  }
-
-  a {
-    text-decoration: none;
   }
 </style>

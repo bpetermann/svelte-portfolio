@@ -28,7 +28,7 @@
 
 <section>
   <article>
-    <img src="/images/me.webp" alt="Me" style="opacity: {$progress}" />
+    <img src="/images/me.webp" alt="Me" class="me" style="opacity: {$progress}" />
     <hgroup>
       <h2>Benjamin Petermann</h2>
       <h3>Junior Frontend Developer</h3>
@@ -74,6 +74,10 @@
   img {
     width: 50%;
     max-width: 300px;
+  }
+
+  .me:hover {
+    filter: drop-shadow(0 0 6px #646cffaa);
   }
 
   nav {
