@@ -44,6 +44,7 @@
   span {
     color: #8a61d3;
     border-color: #8a61d3;
+    margin: 16px 0px;
   }
 
   details > p:first-of-type {
