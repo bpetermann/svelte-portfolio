@@ -29,7 +29,9 @@
 
 <section id="experience">
   <h2>{$i18n.t('Experience')}</h2>
-  {#each experience as { id, cat, name, link, inst, time, description } (id)}
-    <ExperienceTile {cat} {name} {link} {inst} {time} {description} />
-  {/each}
+  <article>
+    {#each experience as { id, cat, name, link, inst, time, description } (id)}
+      <ExperienceTile {id} {cat} {name} {link} {inst} {time} {description} />
+    {/each}
+  </article>
 </section>

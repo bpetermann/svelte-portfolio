@@ -77,7 +77,7 @@
   }
 
   .me:hover {
-    filter: drop-shadow(0 0 6px #646cffaa);
+    filter: drop-shadow(0 0 6px #d5dce2);
   }
 
   nav {

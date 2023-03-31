@@ -1,6 +1,7 @@
 <script lang="ts">
   import i18n from '@/stores/i18n-store';
 
+  export let id: number;
   export let cat: string;
   export let name: string;
   export let link: string;
@@ -9,7 +10,8 @@
   export let description: string;
 </script>
 
-<article>
+<details Open={id === 1}>
+  <summary>{name}</summary>
   <header>
     <div>
       <span role="button" class="contrast outline">{$i18n.t(`${cat}`)}</span>
@@ -25,9 +27,13 @@
   </header>
   <p>{$i18n.t(`${time}`)}</p>
   <p>{$i18n.t(`${description}`)}</p>
-</article>
+</details>
 
 <style>
+  summary {
+    text-align: start;
+  }
+
   div {
     display: flex;
     justify-content: flex-end;
@@ -40,7 +46,7 @@
     border-color: #8a61d3;
   }
 
-  article > p:first-of-type {
+  details > p:first-of-type {
     color: #707f89;
   }
 </style>
