@@ -5,7 +5,7 @@
   }
 </script>
 
-<div on:click={goTop} on:keypress={goTop} role="button" class="outline">
+<div on:click={goTop} on:keypress={goTop} role="button" class="outline" tabindex="0">
   <img src="images/arrow.png" alt="back-to-top" />
 </div>
 
