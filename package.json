@@ -22,7 +22,7 @@
     "@picocss/pico": "^1.5.10",
     "i18next": "^22.5.0",
     "i18next-browser-languagedetector": "^7.0.2",
-    "i18next-http-backend": "^2.2.1",
+    "i18next-http-backend": "^3.0.5",
     "svelte-i18next": "^2.0.0"
   }
 }
